@@ -1,0 +1,61 @@
+body {
+  /* background-color: #282c34;  */
+}
+
+.App {
+  background-color: black;
+  min-height: 100vh;
+  color: white;
+}
+
+.backup {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.menu {
+  position: fixed;
+  left: 50%;
+  bottom: 60px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  color: #292727;
+  padding: 1.75rem 3rem;
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 110px; /* 100px of height + 10px of border */
+  border-top-right-radius: 110px; /* 100px of height + 10px of border */
+  border-bottom-left-radius: 110px; /* 100px of height + 10px of border */
+  border-bottom-right-radius: 110px; /* 100px of height + 10px of border */
+}
+
+.menu-items {
+  display: flex;
+  padding-right: 10px;
+}
+
+.menu-items > .item:not(:last-child) {
+  padding-right: 30px;
+}
+
+.menu-items > a {
+  font-size: 35px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: calc(40px + 2vmin);
+  font-size: calc(20px + 2vmin);
+  color: white;
+}
