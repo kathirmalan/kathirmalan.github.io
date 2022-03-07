@@ -1,8 +1,11 @@
 body {
   /* background-color: #282c34;  */
+  font-family: "Poppins", sans-serif !important;
+  font-size: 48px;
 }
 
 .App {
+  font-family: "Poppins", sans-serif !important;
   background-color: black;
   min-height: 100vh;
   color: white;
@@ -20,18 +23,39 @@ body {
 }
 
 .menu {
+  width: 100%;
   position: fixed;
   left: 50%;
-  bottom: 60px;
-  transform: translate(-50%, -50%);
+  bottom: 0px;
+  transform: translate(-50%, 0%);
   margin: 0 auto;
   color: #292727;
-  padding: 1.75rem 3rem;
+  padding: 0.7rem 3rem;
   background-color: rgb(255, 255, 255);
-  border-top-left-radius: 110px; /* 100px of height + 10px of border */
-  border-top-right-radius: 110px; /* 100px of height + 10px of border */
-  border-bottom-left-radius: 110px; /* 100px of height + 10px of border */
-  border-bottom-right-radius: 110px; /* 100px of height + 10px of border */
+}
+
+@media only screen and (min-width: 601px) {
+  /*Tablets [601px -> 1200px]*/
+  .menu {
+    width: unset;
+    bottom: 20px;
+    padding: 0.7rem 3rem;
+    transform: translate(-50%, -20%);
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border-bottom-left-radius: 110px;
+    border-bottom-right-radius: 110px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .hero-component {
+    min-height: 50vh !important;
+    padding-top: 15px !important;
+  }
 }
 
 .menu-items {
@@ -49,13 +73,61 @@ body {
   color: inherit;
 }
 
-.hero {
-  text-align: center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.hero-component {
   padding-top: calc(40px + 2vmin);
-  font-size: calc(20px + 2vmin);
+  min-height: 100vh;
+}
+
+.hero-component .header {
+  /* display: flex; */
+}
+
+.hero-component .notch-img {
+  text-align: center;
+}
+
+.hero-component .hotlinks {
+  text-align: center;
+  margin-top: calc(5px + 3vmin);
+}
+
+.hero-component .notch-img > img {
+  width: calc(50px + 10vmin);
+  height: auto;
+}
+
+.hero-component .cv-btn {
+  width: 20%;
   color: white;
+  text-decoration: none;
+  padding: calc(4px + 1vmin) calc(15px + 1vmin);
+  border: 2px solid;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  text-align: center;
+}
+
+.hero-component .cv-btn:hover {
+  color: black;
+  background-color: white;
+}
+
+.hero-content {
+  /* display: flex;
+  flex-direction: column; */
+  color: white;
+  margin-left: calc(15px + 2vmin);
+  margin-top: 1.5rem !important;
+}
+
+.hero-content .title {
+  font-weight: 100;
+  font-size: calc(25px + 2vmin);
+}
+
+.hero-content .punch-line {
+  font-weight: 400;
+  font-size: calc(15px + 2vmin);
 }
