@@ -1,23 +1,12 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import notchImg from "../asset/notch-img.jpeg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCloudArrowDown } from "@fortawesome/free-solid-svg-icons";
+import Header from "../compoents/Header";
 
 const Hero = () => {
   return (
     <>
       <Container className="hero-component">
-        <Row className="header">
-          <Col className="notch-img">
-            <img src={notchImg} />
-          </Col>
-          <Col className="hotlinks">
-            <a className="cv-btn">
-              Resume <FontAwesomeIcon icon={faCloudArrowDown} />
-            </a>
-          </Col>
-        </Row>
+        <Header />
         <Row className="justify-content-md-center hero-content">
           <Col lg={{ span: 8, offset: 2 }}>
             <p className="title">

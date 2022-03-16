@@ -6,24 +6,28 @@ import {
   faFingerprint,
   faRocket,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
     <>
       <div className="menu">
         <div className="menu-items">
-          <a href="#" className="item">
+          <Link to="/" className="item">
             <FontAwesomeIcon icon={faHouse} />
-          </a>
-          <a href="#" className="item">
+          </Link>
+
+          <Link to="/profile" className="item">
             <FontAwesomeIcon icon={faUserNinja} />
-          </a>
-          <a href="#" className="item">
+          </Link>
+
+          <Link to="/handcrafts" className="item">
             <FontAwesomeIcon icon={faFingerprint} />
-          </a>
-          <a href="#" className="item">
+          </Link>
+
+          <Link to="/contact" className="item">
             <FontAwesomeIcon icon={faRocket} />
-          </a>
+          </Link>
         </div>
       </div>
     </>
