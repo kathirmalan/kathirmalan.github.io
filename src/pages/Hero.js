@@ -8,13 +8,15 @@ const Hero = () => {
       <Container className="hero-component">
         <Header />
         <Row className="justify-content-md-center hero-content">
-          <Col lg={{ span: 8, offset: 2 }}>
+          <Col lg={{ span: 9 }}>
             <p className="title">
               Hi, <br /> I'm Kathirmalan
             </p>
             <p className="punch-line">
-              Ethuastic young full stack developer posses 4+ years of experince
-              in modern web application development for different sectors.
+              "A Full-stack Software developer with 4+ years of industrial
+              experience in web application development, hosting and maintaining
+              the codebase. Expertise in client requirement analysis and
+              delivered projects with significant optimizations"
             </p>
           </Col>
         </Row>

@@ -2,7 +2,7 @@ import "./App.css";
 import Hero from "./pages/Hero";
 import Profile from "./pages/Profile";
 import Menu from "./compoents/Menu";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Handcrafts from "./pages/Handcrafts";
 import Contact from "./pages/Contact";
 

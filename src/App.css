@@ -83,11 +83,11 @@ body {
 }
 
 .hero-component .notch-img {
-  text-align: center;
+  text-align: left;
 }
 
 .hero-component .hotlinks {
-  text-align: center;
+  text-align: right;
   margin-top: calc(5px + 3vmin);
 }
 
@@ -123,11 +123,27 @@ body {
 }
 
 .hero-content .title {
-  font-weight: 100;
+  font-weight: 400;
   font-size: calc(25px + 2vmin);
 }
 
 .hero-content .punch-line {
-  font-weight: 400;
-  font-size: calc(15px + 2vmin);
+  margin-top: 2em;
+  font-weight: 100;
+  font-size: calc(12px + 2vmin);
+}
+
+.social-links {
+  color: #50abf1;
+  text-decoration: none;
+  font-size: calc(12px + 2vmin);
+}
+
+.social-links-icon {
+  width: 3rem;
+  margin-right: 10px;
+}
+
+.social-links:hover {
+  color: white;
 }
